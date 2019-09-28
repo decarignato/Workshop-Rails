@@ -1,0 +1,9 @@
+<h1>Bem Vindo ao Sistema de Vagas<h1>
+
+  <% @vagas.each do |vaga| %>
+  <h3><%= vaga.titulo %></h3>
+  <p><%= vaga.descricao %></p>
+  <%= link_to 'Editar', edit_vaga_path(vaga) %>
+<% end %>
+
+<%= link_to 'Cadastrar uma nova vaga', new_vaga_path %>

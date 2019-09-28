@@ -1,0 +1,9 @@
+<h1>Editar uma vaga</h1>
+
+<%= form_for @vaga do |f| %>
+<%= f.label :titulo, 'Titulo'%> <br>
+<%= f.text_field  :titulo %>
+<%= f.label :descricao, 'descricao' %>
+<%= f.text_field :descricao %> <br>
+<%= f.submit 'Atualizar Vaga' %>
+<% end %>
